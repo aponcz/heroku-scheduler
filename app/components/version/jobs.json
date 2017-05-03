@@ -1,0 +1,13 @@
+[
+  {
+    "name": "rake db:migrate",
+    "dyno_size": "Standard 1X",
+    "frequency": "Daily"
+  },
+
+  {
+    "name": "rake db:seed",
+    "dyno_size": "Standard 2X",
+    "frequency": "Hourly"
+  }
+]

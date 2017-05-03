@@ -1,0 +1,17 @@
+<div class="container" id="content" ng-app="myApp" ng-controller="View1Ctrl" ng-init="init()">
+
+  <div class="row">
+    <div class="jobs col-md-8 col-md-offset-2">
+      <ul class="listing" ng-repeat="job in data">
+        <cron-job> </cron-job>
+      </ul>
+      <ul ng-show="addDialogVisible" class="listing new-job" style="">
+        <cron-job-edit> </cron-job-edit>
+      </ul>
+      <button ng-hide="addDialogVisible" ng-click="showAddDialog()" class="btn btn-lg btn-block btn-primary non-destructive" id="add-job" style="">Add new job </button>
+
+
+      {{data}}
+    </div>
+  </div>
+</div>
